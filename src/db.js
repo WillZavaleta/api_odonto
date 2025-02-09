@@ -7,7 +7,7 @@ import {
     DB_PORT
 } from './config.js'
 
-export const pool =  await createPool({
+export const pool = createPool({
     user: DB_USER,
     password: DB_PASSWORD,
     host: DB_HOST,

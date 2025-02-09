@@ -15,4 +15,4 @@ app.get('/ping', async (req, res) => {
 })
 
 app.listen(PORT)
-console.log('Server on port 3000', PORT)
+console.log('Server on port ', PORT)
