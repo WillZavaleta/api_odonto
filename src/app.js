@@ -14,5 +14,5 @@ app.get('/ping', async (req, res) => {
     res.json(result[0])
 })
 
-app.listen(PORT)
+app.listen(PORT, "0.0.0.0")
 console.log('Server on port ', PORT)
