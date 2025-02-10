@@ -9,6 +9,11 @@ app.get('/', async (req, res) => {
     res.json(rows)
 })
 
+app.get('/hero', async (req, res) => {
+    const [rows] = await pool.query('SELECT * FROM hero')
+    res.json(rows)
+})
+
 app.get('/ping', async (req, res) => {
     const [result] = await pool.query(`SELECT "hello world" as RESULT`);
     res.json(result[0])
